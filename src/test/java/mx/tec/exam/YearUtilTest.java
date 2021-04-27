@@ -42,4 +42,16 @@ class YearUtilTest {
 		// Then
 		assertEquals(expectedResult, actualResult);
 	}	
+	
+	@Test
+	void testNotDivisibleBy4AreNotLeap() {
+		// Given
+		boolean expectedResult = false;
+		
+		// When
+		boolean actualResult = util.isLeap(2017);
+		
+		// Then
+		assertEquals(expectedResult, actualResult);
+	}	
 }
