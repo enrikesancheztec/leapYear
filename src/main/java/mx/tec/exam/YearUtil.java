@@ -6,6 +6,8 @@ public class YearUtil {
 		
 		if (year % 400 == 0) {
 			leapYear = true;
+		} else if (year % 100 == 0) {
+			leapYear = false;
 		}
 		
 		return leapYear;

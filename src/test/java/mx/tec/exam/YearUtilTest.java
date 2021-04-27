@@ -19,4 +19,15 @@ class YearUtilTest {
 		assertEquals(expectedResult, actualResult);
 	}
 
+	@Test
+	void testDivisibleBy100ButNot400AreNotLeap() {
+		// Given
+		boolean expectedResult = false;
+		
+		// When
+		boolean actualResult = util.isLeap(1700);
+		
+		// Then
+		assertEquals(expectedResult, actualResult);
+	}
 }
